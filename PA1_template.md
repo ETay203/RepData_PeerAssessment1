@@ -31,7 +31,7 @@ p<-g+geom_histogram(binwidth = 500) +xlab("Total number of steps taken each day"
 print(p)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
 
 ```r
 mean_steps<-mean(steps_per_day$TotSteps)
@@ -54,7 +54,7 @@ p<-g+geom_line() + xlab("5-minute interval") + ylab("Average number of steps tak
 print(p)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
 
 ```r
 most_steps<-subset(interval_steps, interval_steps$AvSteps==max(interval_steps$AvSteps))
@@ -111,7 +111,7 @@ p<-g+geom_histogram(binwidth = 500) +xlab("Total number of steps taken each day"
 print(p)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
 
 ```r
 mean_stepsFill<-mean(steps_per_day2$TotSteps)
@@ -163,7 +163,7 @@ g<-p+facet_grid(day ~ .)
 print(g)
 ```
 
-![](PA1_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png)<!-- -->
 
 
 
